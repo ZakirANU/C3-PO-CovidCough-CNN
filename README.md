@@ -1,4 +1,7 @@
 # C3-PO: A Convolutional Neural Network for COVID Onset Prediction from Cough Sounds
+
+**Paper link:** [[Springer Link](https://doi.org/10.1007/978-3-031-53311-2_26)] [[PDF](https://hasan-rakibul.github.io/pdfs/chen2023C3-PO.pdf)]
+
 This study presents a novel approach to diagnosing the highly contagious COVID-19 respiratory disease. Traditional diagnosis methods, such as polymerase chain reaction (PCR) and rapid antigen test (RAT), have been found to be resource-intensive and expensive, prompting the need for alternative diagnostic methods. Existing machine learning-based diagnosis approaches, such as X-rays and CT scans, suffer from suboptimal performance, primarily due to data imbalance and data paucity. To this end, this study proposes **C3-PO**, **C**ough sounds on **C**onvolutional neural network (CNN) for **C**OVID-19 **P**redicti**O**n. The framework utilises data augmentation and segmentation techniques to increase the volume of data to more than three times the original size. It includes an ensemble method to further mitigate the impacts of data paucity and data imbalances. Our CNN model was tested on the crowdsourced Coswara dataset and validated by the Russian dataset. It achieved an accuracy rate of 92.7% and an area under the receiver operating characteristics curve (AUC-ROC) of 98.1% on the Russian dataset, exceeding the existing works by 22% in terms of accuracy. On the Coswara dataset, the method achieved an accuracy rate of 72.3% and an AUC-ROC of 80.0%. 
 
 
@@ -57,3 +60,19 @@ To quickly run this project, run `train_test.ipynb` to train single models, run 
 - `train_test.ipynb`: An example of training and testing a model.
 - `train_test_ensemble.ipynb`: An example of training and testing an ensembled model.
 - `reimplementation/*.ipynb`: Implementation of others' methods, or modification of others' method.
+
+## Citation
+If you find this repository useful, please cite our paper:
+```bibtex
+@inproceedings{chen2023C3-PO,
+    title = {C3-PO: A Convolutional Neural Network for COVID Onset Prediction from Cough Sounds},
+    author = {Chen, Xiangyu and Khan, Md Ayshik Rahman and Hasan, Md Rakibul and Gedeon, Tom and Hossain, Md Zakir},
+    editor = {Rudinac, Stevan and Hanjalic, Alan and Liem, Cynthia and Worring, Marcel and J{\'o}nsson, Bj{\"o}rn Þ{\'o}r and Liu, Bei and Yamakata, Yoko},
+    booktitle = {MultiMedia Modeling},
+    pages = {355--368},
+    year = {2024},
+    address = {Cham},
+    publisher = {Springer Nature Switzerland},
+    doi = {10.1007/978-3-031-53311-2_26}
+}
+```
